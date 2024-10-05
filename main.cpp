@@ -43,12 +43,18 @@ class Color{
 
 int main(){
     // Creating instances of Color objects - utilizing different constructors
-    Color color1();
-    
-    
 
+    // Default Constructor
+    Color black;
+    black.print();
 
+    // Parameter Constructor
+    Color teal(0, 128, 128);
+    teal.print();
 
+    // partial constructor 
+    Color yellow(255, 255);
+    yellow.print();
 
     return 0;
 }
