@@ -18,6 +18,9 @@ class Color{
         // parameter constructor
         Color(int r, int g, int b) {red = r; green = g; blue = b;}
 
+        // partial constructor
+        Color(int r, int g) {red = r, green = g;}
+
         // getters
         int getRed() { return red; }
         int getGreen() { return green; }
@@ -39,26 +42,13 @@ class Color{
 };  
 
 int main(){
-    // Creating instances of Color objects
-    // Using setter methods to store values
-    // Using print function to display output to console
-    Color yellow;
-    yellow.setRed(255);
-    yellow.setGreen(255);
-    yellow.setBlue(0);
-    yellow.print();
+    // Creating instances of Color objects - utilizing different constructors
+    Color color1();
+    
+    
 
-    Color purple;
-    purple.setRed(128);
-    purple.setGreen(0);
-    purple.setBlue(128);
-    purple.print();
 
-    Color orange;
-    orange.setRed(255);
-    orange.setGreen(165);
-    orange.setBlue(0);
-    orange.print();
+
 
     return 0;
 }
