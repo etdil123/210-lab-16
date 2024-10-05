@@ -1,4 +1,4 @@
-// COMSC 210 | Lab 14: Color Class | Ethan Dilk
+// COMSC 210 | Lab 16: Color Class w/ Constructors | Ethan Dilk
 #include <iostream>
 #include <iomanip>
 using namespace std;
@@ -12,6 +12,12 @@ class Color{
         int green;
         int blue;
     public:
+        // default constructor
+        Color() {red = 0; green = 0; blue = 0;}
+
+        // parameter constructor
+        Color(int r, int g, int b) {red = r; green = g; blue = b;}
+
         // getters
         int getRed() { return red; }
         int getGreen() { return green; }
