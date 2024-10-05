@@ -19,7 +19,7 @@ class Color{
         Color(int r, int g, int b) {red = r; green = g; blue = b;}
 
         // partial constructor
-        Color(int r, int g) {red = r, green = g;}
+        Color(int r, int g) {red = r; green = g;}
 
         // getters
         int getRed() { return red; }
